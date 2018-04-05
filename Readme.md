@@ -13,6 +13,13 @@ Run at project directory:
 ```
 $ go run main.go
 ```
+or if you have Docker
+
+```
+
+$ docker run -d -p 8080:8080 himeslab/kafkaboard
+
+```
 
 After this application will start at "localhost:8080". As default, application listening local kafka port (localhost:9092)
 
