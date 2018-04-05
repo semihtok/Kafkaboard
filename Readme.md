@@ -14,8 +14,7 @@ $ run main.go
 
 After this application will start at "localhost:8080". As default, application listening local kafka port (localhost:9092)
 
-Using different IP
-===========
+## Using different IP
 
 For different IP change helpers/KafkaHelper.go :
 
