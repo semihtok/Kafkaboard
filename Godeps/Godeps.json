@@ -1,0 +1,56 @@
+{
+	"ImportPath": "github.com/semihtok/KafkaBoard",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/astaxie/beego",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/config",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context/param",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/grace",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/logs",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/session",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/toolbox",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/utils",
+			"Comment": "v1.9.2",
+			"Rev": "bf5c5626ab429e66d88602e1ab1ab5fbf4629a01"
+		},
+		{
+			"ImportPath": "github.com/segmentio/kafka-go",
+			"Rev": "df82858665d07cebf1404cdaf025b435ebf7300b"
+		}
+	]
+}
