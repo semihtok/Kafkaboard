@@ -9,7 +9,7 @@ How to use?
 Run at project directory:
 
 ```
-$ run main.go
+$ go run main.go
 ```
 
 After this application will start at "localhost:8080". As default, application listening local kafka port (localhost:9092)
