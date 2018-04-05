@@ -24,3 +24,9 @@ For different IP change helpers/KafkaHelper.go :
 conn, _ := kafka.DialLeader(context.Background(), "tcp", "YOUR_IP", topic, partition)
 
 ```
+
+##
+
+Libraries used : Beego (https://github.com/beego), segmentio/kafka-go (github.com/segmentio/kafka-go)
+Dashboard template : StarAdmin Free (github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template)
+
