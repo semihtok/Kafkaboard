@@ -25,8 +25,10 @@ conn, _ := kafka.DialLeader(context.Background(), "tcp", "YOUR_IP", topic, parti
 
 ```
 
-##
+## Libraries used : 
+- Beego (https://github.com/beego), 
+- segmentio/kafka-go (https://github.com/segmentio/kafka-go)
 
-Libraries used : Beego (https://github.com/beego), segmentio/kafka-go (github.com/segmentio/kafka-go)
-Dashboard template : StarAdmin Free (github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template)
+## Dashboard template : 
+- StarAdmin Free (https://github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template)
 
