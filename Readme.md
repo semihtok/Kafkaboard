@@ -1,6 +1,6 @@
 [![build status](https://circleci.com/gh/docker/cli.svg?style=shield)](https://circleci.com/gh/semihtok/Kafkaboard/tree/master)  [![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/Kafkaboard)](https://goreportcard.com/report/github.com/semihtok/Kafkaboard)
 
-Kafkaboard
+Kafkaboard (α)
 ==========
 
 Simple Apache Kafka dashboard for following streamed messages by topic.
