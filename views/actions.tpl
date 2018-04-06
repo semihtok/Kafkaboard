@@ -1,3 +1,4 @@
+<div id="ohsnap" style="color:#6288d0"></div>
 <div class="col-md-12">
     <div class="card">
         <div class="card-body">

@@ -152,7 +152,16 @@
         type: "post",
         data: JSON.stringify(topicModel),
         success: function(response) {
-          console.log(response);
+          if (response.status === "OK") {
+            ohSnap("Message succesfully sent", {
+              duration: "5000"
+            });
+          } else {
+            ohSnap("Something happened and message couldn't send", {
+              color: "red",
+              duration: "5000"
+            });
+          }
         },
         error: function(jqXHR, textStatus, errorThrown) {
           console.log(textStatus, errorThrown);

@@ -30,9 +30,15 @@ func (c *ActionsController) Post() {
 		status := helpers.WriteToKafka(topicRequestModel.Name, []byte(topicRequestModel.Message), 0)
 
 		if status {
+			var response models.TopicResponseModel
+			response.Status = "OK"
+			c.Data["json"] = response
 			c.Ctx.Output.SetStatus(200)
 			c.ServeJSON()
 		} else {
+			var response models.TopicResponseModel
+			response.Status = "Bad Request"
+			c.Data["json"] = response
 			c.Ctx.Output.SetStatus(500)
 			c.ServeJSON()
 		}

@@ -22,4 +22,5 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="/static/js/maps.js"></script>
+<script src="/static/js/ohsnap.min.js"></script>
 <script src="/static/js/dashboard.js"></script>
