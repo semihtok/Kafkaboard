@@ -9,12 +9,14 @@ import (
 	models "github.com/semihtok/KafkaBoard/models"
 )
 
+// KafkaController is kafka controller as beego.Controller type
 type KafkaController struct {
 	beego.Controller
 }
 
 var kafkaResult []string
 
+// MessageFromTopic is getting messages from topic via HTTP post request(s) (post : /kafka)
 func (c *KafkaController) MessageFromTopic() {
 
 	var topicRequestModel models.TopicRequestModel
@@ -38,6 +40,7 @@ func (c *KafkaController) MessageFromTopic() {
 	}
 }
 
+// Read is getting messages by topic name
 func Read(topicName string) {
 	kafkaResult = helpers.ReadFromKafka(topicName)
 }

@@ -8,6 +8,7 @@ import (
 	kafka "github.com/segmentio/kafka-go"
 )
 
+// ReadFromKafka is getting messages from specified Apache Kafka topic
 func ReadFromKafka(topic string) []string {
 
 	partition := 0
@@ -37,6 +38,7 @@ func ReadFromKafka(topic string) []string {
 	return messageList
 }
 
+// WriteToKafka is writing messages into specified Apache Kafka topic
 func WriteToKafka(topic string, partition int, message []byte) {
 
 	conn, _ := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", topic, partition)
