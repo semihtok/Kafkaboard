@@ -42,13 +42,8 @@
                         if (r.length > 0 && lastItem.equals(r) == false) {
                           if (incomeItemCount > 0) {
                             incomeItemCount = totalItemCount - r.length;
-                            console.log("büyük : " + incomeItemCount);
                           } else {
                             incomeItemCount = r.length;
-                            console.log("aynı : " + incomeItemCount);
-                            console.log(r.length);
-                            console.log(lastItem);
-                            console.log(r);
                           }
                           $(".latestMessages tr:last").after(
                             '<tr> <td class="text-left">' +
