@@ -106,9 +106,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="charts">
+                        <a class="nav-link" href="actions">
                             <img class="menu-icon" src="/static/images/menu_icons/05.png" alt="menu icon">
-                            <span class="menu-title">Charts</span>
+                            <span class="menu-title">Actions</span>
                         </a>
                     </li>
                 </ul>

@@ -137,6 +137,28 @@
         ]
       });
     }
+
+    $("#btnSendTopic").click(function() {
+      var topicName = $("#txtTopic").val();
+      var message = $("#txtMessage").val();
+
+      var topicModel = {
+        Name: topicName,
+        Message: message
+      };
+
+      $.ajax({
+        url: "/actions",
+        type: "post",
+        data: JSON.stringify(topicModel),
+        success: function(response) {
+          console.log(response);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+        }
+      });
+    });
   });
 })(jQuery);
 

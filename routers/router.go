@@ -8,5 +8,5 @@ import (
 func init() {
 	beego.Router("/", &controllers.MainController{})
 	beego.Router("/kafka", &controllers.KafkaController{}, "post:MessageFromTopic")
-	beego.Router("/charts", &controllers.ChartController{})
+	beego.Router("/actions", &controllers.ActionsController{})
 }

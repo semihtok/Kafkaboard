@@ -27,7 +27,6 @@ func ReadFromKafka(topic string) []string {
 		if err != nil {
 			break
 		}
-		log.Println(string(b))
 		messageList = append(messageList, string(b))
 	}
 
@@ -39,13 +38,19 @@ func ReadFromKafka(topic string) []string {
 }
 
 // WriteToKafka is writing messages into specified Apache Kafka topic
-func WriteToKafka(topic string, partition int, message []byte) {
+func WriteToKafka(topic string, message []byte, partition int) bool {
 
 	conn, _ := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", topic, partition)
 
 	conn.SetWriteDeadline(time.Now().Add(10 * time.Second))
-	conn.WriteMessages(
+	_, err := conn.WriteMessages(
 		kafka.Message{Value: message},
 	)
 	conn.Close()
+
+	if err != nil {
+		return false
+	} else {
+		return true
+	}
 }
