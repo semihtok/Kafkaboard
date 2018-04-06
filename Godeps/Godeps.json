@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/semihtok/KafkaBoard",
+	"ImportPath": "github.com/semihtok/Kafkaboard",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v79",
 	"Deps": [
@@ -51,6 +51,22 @@
 		{
 			"ImportPath": "github.com/segmentio/kafka-go",
 			"Rev": "df82858665d07cebf1404cdaf025b435ebf7300b"
+		},
+		{
+			"ImportPath": "github.com/semihtok/KafkaBoard/controllers",
+			"Rev": "56e8d30a70c8f44a1a63fc89d1ce9889fa37cd0e"
+		},
+		{
+			"ImportPath": "github.com/semihtok/KafkaBoard/helpers",
+			"Rev": "56e8d30a70c8f44a1a63fc89d1ce9889fa37cd0e"
+		},
+		{
+			"ImportPath": "github.com/semihtok/KafkaBoard/models",
+			"Rev": "56e8d30a70c8f44a1a63fc89d1ce9889fa37cd0e"
+		},
+		{
+			"ImportPath": "github.com/semihtok/KafkaBoard/routers",
+			"Rev": "56e8d30a70c8f44a1a63fc89d1ce9889fa37cd0e"
 		}
 	]
 }
