@@ -3,7 +3,7 @@
 Kafkaboard
 ==========
 
-Simple kafka dashboard for following streamed messages by topic.
+Simple Apache Kafka dashboard for following streamed messages by topic.
 
 ![alt text](screenshots/screenshot.png "Kafkaboard")
 
