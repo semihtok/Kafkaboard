@@ -40,5 +40,15 @@ conn, _ := kafka.DialLeader(context.Background(), "tcp", "YOUR_IP", topic, parti
 - segmentio/kafka-go (https://github.com/segmentio/kafka-go)
 
 ## Dashboard template : 
+
 - StarAdmin Free (https://github.com/BootstrapDash/StarAdmin-Free-Bootstrap-Admin-Template)
 
+## Contributing
+
+This project currently at alpha stage. Please feel free to contribute.
+
+Just create new branch for your changes then send to main repository for reviewing
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
