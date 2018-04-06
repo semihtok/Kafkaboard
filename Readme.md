@@ -10,10 +10,11 @@ Simple Apache Kafka dashboard for following streamed messages by topic.
 How to use?
 ===========
 
-Run at project directory:
+Golang way :
 
 ```
-$ go run main.go
+$ go get -u github.com/semihtok/Kafkaboard
+$ go run $GOPATH/src/github.com/semihtok/Kafkaboard/main.go
 ```
 or if you have Docker
 
