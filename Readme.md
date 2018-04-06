@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/Kafkaboard)](https://goreportcard.com/report/github.com/semihtok/Kafkaboard)
+
 Kafkaboard
 ==========
 
