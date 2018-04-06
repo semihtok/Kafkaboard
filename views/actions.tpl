@@ -17,7 +17,7 @@
                 <label for="txtMessage"></label>
                 <input type="text" class="form-control" style="height: 118px;" id="txtMessage" placeholder="Enter message here">
             </div>
-            <button type="submit" id="btnSendTopic" class="btn btn-success mr-2 col-md-12" style="height: 46px;">Submit</button>
+            <button type="submit" id="btnSendTopic" class="btn btn-success mr-2 col-md-12" style="height: 46px;background-color: #7394d2;border: none;">Submit</button>
         </div>
     </div>
 </div>
