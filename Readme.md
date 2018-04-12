@@ -10,19 +10,14 @@ Simple Apache Kafka dashboard for following streamed messages by topic.
 How to use?
 ===========
 
-Golang way :
+Go way :
 
 ```
 $ go get -u github.com/semihtok/Kafkaboard
 $ go run $GOPATH/src/github.com/semihtok/Kafkaboard/main.go
-```
-or if you have Docker
 
 ```
 
-$ docker run -d -p 8080:8080 himeslab/kafkaboard
-
-```
 
 After this application will start at "localhost:8080". As default, application listening local kafka port (localhost:9092)
 
