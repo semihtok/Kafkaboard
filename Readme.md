@@ -15,7 +15,6 @@ Go way :
 ```
 $ go get -u github.com/semihtok/Kafkaboard
 $ go run $GOPATH/src/github.com/semihtok/Kafkaboard/main.go
-
 ```
 
 
@@ -26,9 +25,7 @@ After this application will start at "localhost:8080". As default, application l
 For different IP change helpers/KafkaHelper.go :
 
 ```go
-
 conn, _ := kafka.DialLeader(context.Background(), "tcp", "YOUR_IP", topic, partition)
-
 ```
 
 ## Libraries used : 
