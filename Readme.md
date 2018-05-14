@@ -1,4 +1,4 @@
-[![build status](https://circleci.com/gh/docker/cli.svg?style=shield)](https://circleci.com/gh/semihtok/Kafkaboard/tree/master)  [![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/Kafkaboard)](https://goreportcard.com/report/github.com/semihtok/Kafkaboard)
+[![build status](https://circleci.com/gh/docker/cli.svg?style=shield)](https://circleci.com/gh/semihtok/Kafkaboard/tree/master)  [![Go Report Card](https://goreportcard.com/badge/github.com/semihtok/Kafkaboard)](https://goreportcard.com/report/github.com/semihtok/Kafkaboard) [![](https://images.microbadger.com/badges/image/himeslab/kafkaboard.svg)](https://microbadger.com/images/himeslab/kafkaboard "Get your own image badge on microbadger.com")
 
 Kafkaboard (α)
 ==========
@@ -15,6 +15,12 @@ Go way :
 ```
 $ go get -u github.com/semihtok/Kafkaboard
 $ go run $GOPATH/src/github.com/semihtok/Kafkaboard/main.go
+```
+
+Docker way:
+
+```
+$ docker run -d -p 8080:8080 -e KafkaURL=<KAFKA IP:PORT> himeslab/kafkaboard
 ```
 
 
