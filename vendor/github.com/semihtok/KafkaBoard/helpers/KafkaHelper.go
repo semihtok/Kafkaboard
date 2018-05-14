@@ -3,6 +3,7 @@ package helpers
 import (
 	"context"
 	"log"
+	"os"
 	"time"
 
 	kafka "github.com/segmentio/kafka-go"
@@ -13,7 +14,14 @@ func ReadFromKafka(topic string) []string {
 
 	partition := 0
 
-	conn, _ := kafka.DialLeader(context.Background(), "tcp", "localhost:9092", topic, partition)
+	kafkaURL := os.Getenv("KafkaURL")
+
+	if kafkaURL == "" {
+		log.Println("KafkaURL not defined as ENV variable (if you're using docker)")
+		log.Panicln("Using default Kafka url : localhost:9092")
+		kafkaURL = "localhost:9092"
+	}
+	conn, _ := kafka.DialLeader(context.Background(), "tcp", kafkaURL, topic, partition)
 
 	conn.SetReadDeadline(time.Now().Add(1 * time.Second))
 	batch := conn.ReadBatch(10e3, 1e6) // fetch 10KB min, 1MB max
@@ -29,8 +37,6 @@ func ReadFromKafka(topic string) []string {
 		}
 		messageList = append(messageList, string(b))
 	}
-
-	log.Println(messageList)
 
 	batch.Close()
 	conn.Close()

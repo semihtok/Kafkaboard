@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"encoding/json"
-	"log"
 
 	"github.com/astaxie/beego"
 	helpers "github.com/semihtok/KafkaBoard/helpers"
@@ -28,7 +27,6 @@ func (c *KafkaController) MessageFromTopic() {
 	} else {
 		go Read(topicRequestModel.Name)
 		if kafkaResult == nil {
-			log.Println(err)
 			c.Ctx.Output.SetStatus(404)
 		} else {
 			response := models.TopicResponseModel{}

@@ -2,7 +2,6 @@ package helpers
 
 import (
 	"context"
-	"log"
 	"time"
 
 	kafka "github.com/segmentio/kafka-go"
@@ -29,8 +28,6 @@ func ReadFromKafka(topic string) []string {
 		}
 		messageList = append(messageList, string(b))
 	}
-
-	log.Println(messageList)
 
 	batch.Close()
 	conn.Close()
